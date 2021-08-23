@@ -25,3 +25,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Activate FZF shortcuts
 source /usr/share/fzf/completion.zsh && source /usr/share/fzf/key-bindings.zsh
+
+# Add my aliases
+source $HOME/.aliases

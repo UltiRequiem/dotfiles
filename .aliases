@@ -1,0 +1,38 @@
+# Fast exit
+alias q="exit"
+
+# FZF Related
+alias fiu="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
+
+# See mount disks
+alias mnt="mount | awk -F' ' '{ printf \"%s\t%s\n\",\$1,\$3; }' | column -t | egrep ^/dev/ | sort"
+
+# Neovim Related
+alias v="nvim"
+alias vi="nvim -u 'NONE'"
+alias vf='nvim $(fiu)'
+
+# The last command with sudo
+alias please='sudo $(fc -ln -1)'
+
+# Go to a temporal directory
+alias te='cd $(mktemp -d)'
+
+# Gotta go fast
+alias dl="cd ~/Downloads; lsd"
+
+# Get week number
+alias week='date +%V'
+
+# My File Manager
+alias f="ranger"
+
+# Better ls
+alias ls="lsd"
+alias l="lsd -l"
+alias la="lsd -a"
+alias tree="lsd --tree"
+
+alias left='ls -t -1'
+
+# vim: ft=sh tw=80
