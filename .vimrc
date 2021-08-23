@@ -1,4 +1,4 @@
-" UltiRequiem's Ultra Basic vimrc
+" UltiRequiem's basic vimrc
 set nocompatible fileformat=unix encoding=utf-8
 
 filetype plugin indent on  
