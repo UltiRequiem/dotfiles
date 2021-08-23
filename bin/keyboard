@@ -1,0 +1,11 @@
+#!/bin/python
+
+from os import popen
+
+
+def get_layout():
+    return popen("setxkbmap -query").read().split()[5].capitalize()
+
+
+if __name__ == "__main__":
+    print(f"Your keyboard distribution is: {get_layout()}.")

@@ -1,17 +1,6 @@
 #!/usr/bin/env node
 
-/**
- * Executes a shell command and return it as a Promise.
- * @param cmd {string}
- * @return {Promise<string>}
- */
-function shell(cmd) {
-  return new Promise((resolve, reject) => {
-    require("child_process").exec(cmd, (error, stdout, stderr) => {
-      error ? reject(error) : resolve(stdout ? stdout : stderr);
-    });
-  });
-}
+const shell = require("util").promisify(require("child_process").exec);
 
 class MonitorManager {
   /**
@@ -41,7 +30,7 @@ class Monitor {
   }
 
   static async getPrincipalMonitor() {
-    return (await shell("xrandr --query | grep primary")).split(" ")[0];
+    return (await shell("xrandr --query | grep primary")).stdout.split(" ")[0];
   }
 
   async isConnected() {
