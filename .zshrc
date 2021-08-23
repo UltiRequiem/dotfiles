@@ -1,4 +1,4 @@
-# Oh My Zsh Configuration
+ Oh My Zsh Configuration
 export ZSH="$HOME/.oh-my-zsh"
 
 # Altough it is the default theme, is my favorite theme
@@ -27,6 +27,13 @@ export PATH="$PATH:~/bin"
 
 # Adding yarn bins to the path
 export PATH="$PATH:$(yarn global bin)"
+
+# Setting GOPATH and adding Golang bins to the path
+export GOPATH=$(go env GOPATH)
+export PATH="$PATH:$(GOPATH)/bin"
+
+# Adding ruby gems bins to the path
+export PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
 
 # FZF Configuration
 export FZF_DEFAULT_COMMAND="fd . $HOME"
