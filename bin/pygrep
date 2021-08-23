@@ -1,0 +1,24 @@
+#!/bin/python
+
+"""
+A grep implementation on Python
+"""
+
+from sys import argv
+
+
+def grep(word, file):
+    for line in file:
+        if word in line:
+            print(line.strip())
+
+
+if __name__ == "__main__":
+    try:
+        grep(argv[1], open(argv[2]))
+    except FileNotFoundError:
+        print("That's not a vaild file.")
+    except IndexError:
+        print("Params missing!")
+
+# https://codereview.stackexchange.com/questions/266336
