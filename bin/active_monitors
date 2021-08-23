@@ -28,4 +28,5 @@ class Monitor:
 
 
 if __name__ == "__main__":
-    MonitorManager((Monitor("HDMI-1", "right"),)).activate_all_monitors()
+    my_manager = MonitorManager((Monitor("HDMI-1", "right"),))
+    my_manager.activate_all_monitors()

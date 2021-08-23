@@ -3,4 +3,4 @@
 // Ever pasted "$ somecommand" into the terminal and gotten this error?
 // zhs: command not found: $
 
-console.log('Quit pasting in commands from the internet, you lazy.')
+console.log("Quit pasting in commands from the internet, you lazy.");
