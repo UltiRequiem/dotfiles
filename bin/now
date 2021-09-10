@@ -3,7 +3,7 @@
 /**
  * @param {Date} date
  * @returns {string} The formatted date. e.g: "It's 12:32 o'clock on Tuesday, December 31,2021. (2021/12/31)"
-*/
+ */
 function getFormattedDate(date = new Date()) {
   const dayName = date.toLocaleDateString("en-US", { weekday: "long" });
   const monthName = date.toLocaleDateString("en-US", { month: "long" });

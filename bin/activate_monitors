@@ -1,0 +1,32 @@
+#!/usr/bin/env python3.10
+
+from os import popen, system
+
+
+class MonitorManager:
+    def __init__(self, monitors: tuple | list):
+        self.monitors = monitors
+
+    def activate_all_monitors(self):
+        for monitor in self.monitors:
+            if monitor.is_conected():
+                monitor.activate()
+                print(f"{monitor.name} connected!")
+
+
+class Monitor:
+    def __init__(self, name, side):
+        self.name = name
+        self.side = side
+        self.principal = popen("xrandr --query | grep primary").read().split()[0]
+
+    def is_conected(self) -> bool:
+        return "connected" in popen(f"xrandr --query | grep {self.name}").read()
+
+    def activate(self) -> None:
+        system(f"xrandr --output {self.name} --auto --{self.side}-of {self.principal}")
+
+
+if __name__ == "__main__":
+    my_manager = MonitorManager([Monitor("HDMI-1", "right")])
+    my_manager.activate_all_monitors()

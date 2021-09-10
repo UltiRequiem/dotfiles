@@ -1,0 +1,37 @@
+#!/usr/bin/env sh
+
+upload() {
+	curl -F"file=@$(pwd)/$1" https://0x0.st
+}
+
+extswap() {
+	for f in *.$1; do
+		mv -- "$f" "${f%.$1}.$2"
+	done
+}
+
+dchoice() {
+	[ "$(printf "No\\nYes" | dmenu -i -p "$1")" = "Yes" ] && $2
+}
+
+dbrowser() {
+	QUERY=$(echo '' | dmenu -p "Search on Google: ")
+
+	if [ -n "$QUERY" ]; then
+		xdg-open "https://www.google.com/search?q=${QUERY}" 2>/dev/null
+	fi
+
+}
+
+record_no_audio() {
+
+	ffmpeg -f x11grab -s 1366x768 -i :0.0 output.mp4
+}
+
+record() {
+	ffmpeg -video_size 1366x768 -framerate 25 -vb 20M -f x11grab -i :0.0+0,0 -f alsa -ac 2 -i pulse -acodec aac -strict experimental output.mp4
+}
+
+yas() {
+	yay -Slq | fzf -m --preview 'yay -Si {1}' | yay -S -
+}

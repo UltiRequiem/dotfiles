@@ -3,17 +3,14 @@
 const fs = require("fs/promises");
 
 async function getFileLines(file) {
-  if (!file) {
-    console.log("You have to pass a file!");
-    process.exit();
-  }
+  if (!file) throw new Error("You have to pass a file!");
 
   const content = await fs.readFile(file, "utf-8");
   return content.split("\n").length;
 }
 
-async function printLines() {
+async function main() {
   console.log((await getFileLines(process.argv[2])) - 1);
 }
 
-printLines();
+main();

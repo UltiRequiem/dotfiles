@@ -1,4 +1,4 @@
-#!/bin/python
+#!/usr/bin/env python
 
 """
 A grep implementation on Python
@@ -21,4 +21,4 @@ if __name__ == "__main__":
     except IndexError:
         print("Params missing!")
 
-# https://codereview.stackexchange.com/questions/266336
+# codereview.stackexchange.com/questions/266336
