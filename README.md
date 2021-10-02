@@ -4,7 +4,7 @@ My current OS is [Archlinux](https://github.com/UltiRequiem/Archlinux).
 
 ## Shell
 
-My current shell is [zsh](https://www.zsh.org),
+My current shell is [zsh](https://zsh.org),
 and I use [Oh my Zsh](https://ohmyz.sh) as framework.
 
 ## Scripts
@@ -16,3 +16,7 @@ Right now I am trying to pass all my scripts to Node.js.
 I try not to have bash scripts (although I have some) since they are not so
 maintainable in the long term and do not have all
 the facilities of a normal programming language.
+
+### License
+
+All here is licensed under the [MIT License](./LICENSE.md).

@@ -39,6 +39,21 @@
   alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\ \t => \\2/' | sort
   subup = submodule update --init
   ci = commit -m
+[pager]
+  diff = delta
+  log = delta
+  reflog = delta
+  show = delta
+
+[delta]
+  plus-style = "syntax #012800"
+  minus-style = "syntax #340001"
+  syntax-theme = Monokai Extended
+  navigate = true
+
+[interactive]
+  diffFilter = delta --color-only
+
 
 [user]
   name = Eliaz Bobadilla
