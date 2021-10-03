@@ -2,7 +2,6 @@
 
 from os import popen, system
 
-
 class MonitorManager:
     def __init__(self, monitors: tuple | list):
         self.monitors = monitors

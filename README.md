@@ -4,18 +4,16 @@ My current OS is [Archlinux](https://github.com/UltiRequiem/Archlinux).
 
 ## Shell
 
-My current shell is [zsh](https://zsh.org),
-and I use [Oh my Zsh](https://ohmyz.sh) as framework.
+My current shell is [zsh](https://zsh.org), and I use
+[Oh my Zsh](https://ohmyz.sh) as framework.
 
 ## Scripts
 
-My scripts are made with 3 different technologies: Python, Ruby and Node.js
+Some time ago I had my scripts written in JavaScript, using Nodejs. The problem
+is that Nodejs is not installed on all the computers that I use while Python and
+Bash are.
 
-Right now I am trying to pass all my scripts to Node.js.
-
-I try not to have bash scripts (although I have some) since they are not so
-maintainable in the long term and do not have all
-the facilities of a normal programming language.
+So I decided to try to pass all my short scripts to [Bash Functions](./.functions) and the other scripts to Python.
 
 ### License
 
