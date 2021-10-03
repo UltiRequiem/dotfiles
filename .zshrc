@@ -29,5 +29,5 @@ source /usr/share/fzf/completion.zsh && source /usr/share/fzf/key-bindings.zsh
 # Add my aliases
 source $HOME/.aliases
 
-# Add custom functions
+# Cool Functions
 source $HOME/.functions

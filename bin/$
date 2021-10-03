@@ -1,6 +1,7 @@
-#!/usr/bin/env node
+#!/usr/bin/env python
 
-// Ever pasted "$ somecommand" into the terminal and gotten this error?
-// zhs: command not found: $
+# Ever pasted "$ somecommand" into the terminal and gotten this error?
+# zhs: command not found: $
 
-console.log("Quit pasting in commands from the internet, you lazy.");
+
+print("Quit pasting in commands from the internet, you lazy.")
