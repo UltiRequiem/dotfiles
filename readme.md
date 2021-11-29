@@ -5,8 +5,8 @@ and I'm quite satisfied with it so I don't plan on changing it anytime soon.
 
 ## Shell
 
-My current shell is [zsh](https://zsh.org), and I use
-[Oh my Zsh](https://ohmyz.sh) as framework.
+My current shell is [zsh](https://zsh.org),
+with [Oh my Zsh](https://ohmyz.sh) as framework.
 
 ## Scripts
 
