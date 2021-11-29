@@ -1,5 +1,10 @@
 # Dotfiles
 
+![Screenshot](./assets/system_screenshot.png)
+
+> Window Manager: [i3](https://github.com/Airblader/i3) -
+> Status Bar: [bumblebee-status](https://github.com/tobi-wan-kenobi/bumblebee-status)
+
 My current OS is [Archlinux](https://archlinux.org),
 and I'm quite satisfied with it so I don't plan on changing it anytime soon.
 
