@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+# Pass to rust
+
 from os import popen, system
 
 class MonitorManager:

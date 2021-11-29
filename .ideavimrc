@@ -6,7 +6,6 @@ let g:argtextobj_pairs="[:],(:),<:>"
 
 set showmode so=5 incsearch number relativenumber
 
-nnoremap <c-s> :w<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 inoremap <c-s> <Esc>:w<CR>

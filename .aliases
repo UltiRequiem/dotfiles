@@ -1,7 +1,7 @@
 # Better ls
 alias ls="lsd"
 
-alias v=$EDITOR
+alias v="$EDITOR"
 
 alias dk="sudo docker"
 alias dkc="sudo docker-compose"

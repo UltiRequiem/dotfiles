@@ -1,4 +1,4 @@
-# I don't use a display manager, so...
+# I don't use a display manager
 if [[ -z "$DISPLAY" ]] && [[ $(tty) = /dev/tty1 ]]; then
 	exec startx &
 	exit

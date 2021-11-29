@@ -31,8 +31,6 @@ initializeANSI() {
 	reset="${esc}[0m"
 }
 
-clear
-
 initializeANSI
 
 cat <<EOF
