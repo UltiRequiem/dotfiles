@@ -1,7 +1,9 @@
-source "$(dirname "$0")/pacman.sh"
+SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
 
-source "$(dirname "$0")/npm.sh"
+source "$SCRIPT_DIR/pacman.sh"
 
-source "$(dirname "$0")/composer.sh"
+source "$SCRIPT_DIR/npm.sh"
 
-source "$(dirname "$0")/rustup.sh"
+source "$SCRIPT_DIR/composer.sh"
+
+source "$SCRIPT_DIR/rustup.sh"

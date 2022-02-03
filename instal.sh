@@ -16,14 +16,17 @@ while true; do
   kill -0 "$$" || exit
 done 2>/dev/null &
 
+# little workaround
+user=$(ls /home)
+
 ###############################################################################
 # npm && rustup && composer                                                   #
 ###############################################################################
 
-source "$(dirname "$0")/installers/ulti.sh"
+source "/home/$user/.dotfiles/installers/ulti.sh"
 
 ###############################################################################
 # zsh && nvim && wezterm && ranger, etc                                       #
 ###############################################################################
 
-source "$(dirname "$0")/symlinks.sh"
+source "/home/$user/.dotfiles/symlinks.sh"
