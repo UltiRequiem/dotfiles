@@ -130,6 +130,3 @@ bindsym Control+Alt+Print exec flameshot screen -c
 # Brighness
 bindsym XF86MonBrightnessDown exec brightnessctl set 2%-
 bindsym XF86MonBrightnessUp exec brightnessctl set +2%
-
-exec picom -b -f
-exec feh --bg-fill --random ~/disk/wallpapers

@@ -1,4 +1,3 @@
-# Better ls
 alias ls="lsd"
 
 alias v="$EDITOR"
@@ -8,4 +7,6 @@ alias dkc="sudo docker-compose"
 
 alias f="ranger"
 
-# vim: ft=sh
+alias editorconfig="cp ~/.dotfiles/config/.editorconfig ."
+
+alias gac="git add . && gitmoji --commit"
