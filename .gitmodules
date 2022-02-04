@@ -1,0 +1,3 @@
+[submodule "programs/nvim"]
+	path = programs/nvim
+	url = git@github.com:UltiRequiem/UltiVim.git

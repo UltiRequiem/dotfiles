@@ -1,6 +1,0 @@
-#!/usr/bin/env sh
-
-# Ever pasted "$ somecommand" into the terminal and gotten something like this error?
-# zsh: command not found: $
-
-echo "Quit pasting in commands from the internet, you lazy."
