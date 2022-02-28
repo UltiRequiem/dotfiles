@@ -1,0 +1,10 @@
+
+function vif() {
+  orgs=$(ls ~/disk/repos)
+  chosed_org=$(echo $orgs| fzf)
+
+  cd ~/disk/repos/$chosed_org/$(ls ~/disk/repos/$chosed_org/ | fzf)
+  clear
+}
+
+bindkey -s '^k' 'vif^M'
