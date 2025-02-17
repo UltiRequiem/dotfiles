@@ -49,6 +49,14 @@ apt install -y libc6:amd64 libstdc++6:amd64 lib32z1 libbz2-1.0:amd6 libgtk-3-dev
 curl -fsSL https://deno.land/install.sh | sh
 ```
 
+### Rust
+
+> https://doc.rust-lang.org/cargo/getting-started/installation.html
+
+```
+curl https://sh.rustup.rs -sSf | sh
+```
+
 ## Software
 
 ```sh
@@ -84,3 +92,7 @@ curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | sudo 
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo apt-get update && sudo apt-get install spotify-client
 ```
+
+### Leetcode CLI
+
+> https://github.com/clearloop/leetcode-cli
