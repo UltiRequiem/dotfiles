@@ -10,6 +10,14 @@ Proud archlinux user for the homies, ubuntu/debian for work
 
 ## Development
 
+## Oh my ZSH!
+
+> https://ohmyz.sh/#install
+
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
 ## Git config
 
 ```sh
@@ -31,6 +39,14 @@ cat ~/.ssh/id_ed25519.pub
 sudo apt-get update -y && sudo apt-get upgrade -y;
 
 apt install -y libc6:amd64 libstdc++6:amd64 lib32z1 libbz2-1.0:amd6 libgtk-3-dev ninja-build cmake clang  libglu1-mesa;
+```
+
+### Deno
+
+> https://docs.deno.com/runtime/getting_started/installation/
+
+```
+curl -fsSL https://deno.land/install.sh | sh
 ```
 
 ## Software
