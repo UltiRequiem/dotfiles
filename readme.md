@@ -1,6 +1,12 @@
 # my home
 
-## Basics
+Currently using Ubuntu.
+
+Ubuntu: ~ 1 year / Debian: 2 years / Arch: 4 years / Fedore: ~0.5 years
+
+Proud archlinux user for the homies, ubuntu/debian for work
+
+## Development
 
 ## Git config
 
@@ -14,8 +20,6 @@ ssh-add ~/.ssh/id_ed25519
 
 cat ~/.ssh/id_ed25519.pub
 ```
-
-## Development
 
 ### Flutter
 
