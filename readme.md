@@ -1,22 +1,13 @@
-# Dotfiles
+# my home
 
-![Screenshot](./assets/system_screenshot.png)
+sudo apt install ranger git curl
 
-> Window Manager: [i3](https://github.com/Airblader/i3) -
-> Status Bar: [bumblebee-status](https://github.com/tobi-wan-kenobi/bumblebee-status)
+sudo add-apt-repository ppa:neovim-ppa/unstable && sudo apt-get update && sudo apt-get install neovim
 
-My current OS is [Archlinux](https://archlinux.org),
-and I'm quite satisfied with it so I don't plan on changing it anytime soon.
+git config --global user.email "eliaz.bobadilladev@gmail.com"
+git config --global user.name "Eliaz Bobadilla
 
-## Inspiration :heart: :earth_americas:
-
-- Miloš Sutanovac's [dotfiles](https://github.com/mixn/dotfiles)
-
-## Shell
-
-My current shell is [zsh](https://zsh.org),
-with [Oh my Zsh](https://ohmyz.sh) as framework.
-
-### License
-
-Take anything you want from here, [MIT](./license).
+ssh-keygen -t ed25519 -C "eliaz.bobadilladev@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub
