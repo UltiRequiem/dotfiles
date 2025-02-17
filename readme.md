@@ -2,6 +2,8 @@
 
 Currently using Ubuntu.
 
+![Linux](./enlightenment.png)
+
 Ubuntu: ~ 1 year / Debian: 2 years / Arch: 4 years / Fedore: ~0.5 years
 
 Proud archlinux user for the homies, ubuntu/debian for work
