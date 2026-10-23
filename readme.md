@@ -41,14 +41,6 @@ sudo apt-get update -y && sudo apt-get upgrade -y;
 apt install -y libc6:amd64 libstdc++6:amd64 lib32z1 libbz2-1.0:amd6 libgtk-3-dev ninja-build cmake clang  libglu1-mesa;
 ```
 
-### Deno
-
-> https://docs.deno.com/runtime/getting_started/installation/
-
-```
-curl -fsSL https://deno.land/install.sh | sh
-```
-
 ### Rust
 
 > https://doc.rust-lang.org/cargo/getting-started/installation.html
